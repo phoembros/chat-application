@@ -128,6 +128,8 @@ export default function ChatPanel({ onSend }) {
     return null;
   }
 
+  // hello
+  
   return (
     <div className="chat-container">
       <div className="chat-header">
