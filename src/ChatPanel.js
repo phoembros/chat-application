@@ -129,6 +129,8 @@ export default function ChatPanel({ onSend }) {
   }
 
   // hello
+
+  // Test command
   
   return (
     <div className="chat-container">
