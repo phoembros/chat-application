@@ -1,5 +1,5 @@
 import React from 'react';
-
+//comment
 export default function Message({ msg }) {
   const renderMessage = () => {
     if (msg.type === 'text') {
