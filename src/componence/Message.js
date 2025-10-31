@@ -15,6 +15,7 @@ export default function Message({ msg }) {
         <div className="msg-bubble image">
           <img src={msg.url} alt={msg.fileName || 'image'} className="msg-image" />
           <div className="msg-meta">{msg.fileName}</div>
+          <div className='msg-meta'>Image • {new Date(msg.createdAt).toLocaleString()}</div>
         </div>
       );
     }

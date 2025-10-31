@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './ChatPanel.css';
-import Message from './Message';
-import useVoiceRecorder from './VoiceRecorder';
+import Message  from './componence/Message';
+import useVoiceRecorder  from './componence/VoiceRecorder';
 
 export default function ChatPanel({ onSend }) {
   const [input, setInput] = useState('');
@@ -30,11 +30,11 @@ export default function ChatPanel({ onSend }) {
     addMessage({ id: Date.now(), type: 'image', fileName: file.name, file, url, createdAt: new Date().toISOString() });
     e.target.value = null;
   };
-
+  
   return (
     <div className="chat-container">
       <div className="chat-header">
-        <div className="chat-title">Chat</div>
+        <div className="chat-title">KH-Chat</div>
         <div className="chat-sub">Text • Image • Voice</div>
       </div>
 
@@ -68,7 +68,7 @@ export default function ChatPanel({ onSend }) {
             onTouchEnd={(e) => { e.preventDefault(); stopRecording(); }}
             title={mediaSupported ? (isRecording ? 'Release to stop' : 'Hold to record') : 'Voice not supported'}
           >
-            🎤
+            🎤 
           </button>
         </div>
 

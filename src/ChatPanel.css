@@ -1,7 +1,7 @@
 .chat-container {
   width: 100%;
   max-width: 900px;
-  height: 600px;
+  height: 570px;
   margin: 24px auto;
   display: flex;
   flex-direction: column;
@@ -20,14 +20,14 @@
   background: linear-gradient(90deg,#2563eb,#7c3aed);
   color: #fff;
 }
-.chat-title { font-size: 18px; font-weight: 600; }
-.chat-sub { font-size: 13px; opacity: 0.9 }
+.chat-title { font-size: 25px; font-weight: 600; }
+.chat-sub { font-size: 14px; opacity: 0.8 }
 
 .chat-body {
   flex: 1 1 auto;
   padding: 18px;
   overflow-y: auto;
-  background: #f7f9fc;
+  background: lab(91.7% -0.6 -6.26);
 }
 
 .empty { text-align: center; color: #7b8794; padding-top: 40px }
@@ -39,8 +39,8 @@
 }
 .chat-msg { max-width: calc(100% - 64px); }
 
-.msg-bubble { background: #fff; padding: 10px 12px; border-radius: 10px; box-shadow: 0 3px 10px rgba(12,18,32,0.04); }
-.msg-bubble.text { }
+.msg-bubble { background: #fcfcfc; padding: 10px 12px; border-radius: 10px; box-shadow: 0 3px 10px rgba(12,18,32,0.04); }
+/*.msg-bubble.text { }*/
 .msg-text { font-size: 14px; color: #111827; line-height: 1.35 }
 .msg-meta { font-size: 11px; color: #9aa3ad; margin-top: 8px }
 
@@ -55,14 +55,14 @@
 }
 .controls { display:flex; gap:8px; align-items:center }
 .icon-btn { background: transparent; border: none; font-size: 18px; cursor: pointer; padding: 8px; border-radius: 8px }
-.icon-btn:hover { background: #f3f4f6 }
+.icon-btn:hover { background: #eeeeee }
 .hidden-file { display: none }
 
 .record { transition: background .15s; }
 .recording { background: #fee2e2 }
 
 .text-input { flex:1; padding: 10px 12px; border-radius: 8px; border: 1px solid #e6eef6; font-size: 14px }
-.text-input:focus { outline: none; border-color: #93c5fd; box-shadow: 0 0 0 3px rgba(59,130,246,0.08) }
+.text-input:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 1px rgba(59,130,246,0.08) }
 
 .send-btn { background: #4f46e5; color: #fff; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer }
 .send-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(79,70,229,0.18) }
