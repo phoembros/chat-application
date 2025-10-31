@@ -29,7 +29,6 @@ export default function ChatPanel({ onSend }) {
     const url = URL.createObjectURL(file);
     addMessage({ id: Date.now(), type: 'image', fileName: file.name, file, url, createdAt: new Date().toISOString() });
     e.target.value = null;
-
   };
   
   return (
